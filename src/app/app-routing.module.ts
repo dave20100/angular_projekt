@@ -12,7 +12,7 @@ const routes: Routes = [];
 export class AppRoutingModule { }
 
 function getData(){
-  firebase.database().ref('/').on('child_added', (title) => {
+  firebase.database().ref('/').on('child_added', (title: any) => {
     console.log(title);
   })
 }
