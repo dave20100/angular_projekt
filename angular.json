@@ -106,6 +106,16 @@
           "options": {
             "browserTarget": "angularFirst:build"
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "angularFirst:build:production",
+            "firebaseProject": "projekt-na-lapsowe",
+            "firebaseHostingSite": "projekt-na-lapsowe"
+          }
         }
       }
     }

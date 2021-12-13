@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+nav {
+    background-color: #CFF0AF;
+    height: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.dodawanie_ksiazki {
+    width: 50%;
+    background-color: #D6DCED;
+}
+
+.wyswietlanie_ksiazek {
+    background-color: #EBE6CE;
+    width: 50%;
+}

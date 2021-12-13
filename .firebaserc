@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "projekt-na-lapsowe": {
+      "hosting": {
+        "angularFirst": [
+          "projekt-na-lapsowe"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "projekt-na-lapsowe"
+  }
+}
