@@ -11,6 +11,7 @@ export const environment = {
     authDomain: 'projekt-na-lapsowe.firebaseapp.com',
     messagingSenderId: '867783496363',
     measurementId: 'G-4N4NVM628M',
+    databaseURL: "https://projekt-na-lapsowe-default-rtdb.europe-west1.firebasedatabase.app"
   },
   production: false
 };

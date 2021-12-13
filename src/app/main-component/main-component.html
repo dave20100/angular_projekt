@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="dodawanie_ksiazki">
+        <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+            <label for="tytul">Podaj tytuł książki:</label>
+            <br>
+            <input type="text" class="form-control" id="tytul"
+       required
+       [(ngModel)]="book.tytul" name="tytul">
+            <br>
+            <label for="autor">Podaj autora książki:</label>
+            <br>
+            <input type="text" class="form-control" id="autor"
+       required
+       [(ngModel)]="book.autor" name="autor">
+            <br>
+            <br>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    <div class="wyswietlanie_ksiazek">
+        <p *ngFor="let loadedBook of loadedBooks | async">{{loadedBook.tytul}} - {{loadedBook.autor}}</p>
+    </div>
+</div>
