@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { Book } from '../model/book';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-main-component',
@@ -19,11 +20,9 @@ export class MainComponentComponent {
     this.loadedBooks = this.booksRef.valueChanges();
   }
 
-  ngOnInit() {
-  }
-
-  onSubmit()
+  onSubmit(form: NgForm)
   {
     this.booksRef.push(this.book);
+    form.reset()
   }
 }
